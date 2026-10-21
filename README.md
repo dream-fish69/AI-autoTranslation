@@ -1,8 +1,8 @@
-# AutoTranslation —— 给"没有中文"的模组自动补汉化
+# AI-autoTranslation —— 给"没有中文"的模组自动补汉化
 
-一个 **NeoForge 26.x（Minecraft 26.x）** 客户端模组：扫描 `mods/` 里所有模组的语言文件，找出**没有 `zh_cn.json` 的命名空间**，先用 **CFPA 社区汉化库** 覆盖，剩下的缺口用 **大模型** 补——没填 API Key 时自动改用**内置离线词典**。最后以**普通资源包**注入游戏，几秒后自动重载成中文。
+一个 **NeoForge 26.3（Minecraft 26.3）** 客户端模组：扫描 `mods/` 里所有模组的语言文件，找出**没有 `zh_cn.json` 的命名空间**，先用 **CFPA 社区汉化库** 覆盖，剩下的缺口用 **大模型** 补——没填 API Key 时自动改用**内置离线词典**。最后以**普通资源包**注入游戏，几秒后自动重载成中文。
 
-> 目标环境：Minecraft 26.x + NeoForge 26.x.，Java 25
+> 目标环境：Minecraft 26.3 + NeoForge 26.3.x，Java 25。
 
 ## 下载与安装
 
@@ -180,7 +180,7 @@ auto-translation/
 ├── tools/CfpaProbe.java          # 只测 CFPA 解析/下载/覆盖统计
 ├── tools/OfflineProbe.java       # 只测离线词典：词条数、样例、真实字符串覆盖率
 ├── src/main/resources/META-INF/neoforge.mods.toml
-├── src/main/resources/icon.png             # 512×512 模组图标（A → 文）
+├── src/main/resources/icon.png             # 128×128 模组图标（A → 文）
 ├── src/main/resources/assets/auto_translation/lang/offline-glossary.json   # 内置术语表
 └── src/main/java/com/dsh/autotranslation/
     ├── AutoTranslationMod.java          # 入口：注册资源包/配置界面、一次性调度、3 次重试、重载
