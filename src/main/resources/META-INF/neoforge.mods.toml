@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="auto_translation"
+version="1.0.0"
+displayName="AI-autoTranslation / 自动汉化"
+authors="dream_fish, dsh"
+credits="Community translations: CFPAOrg/Minecraft-Mod-Language-Package (downloaded at runtime, CC BY-NC-SA 4.0). Vanilla terms are read from the local game files and are not redistributed."
+iconFile="icon.png"
+description='''Scans installed mods for namespaces without a Chinese language file, translates the missing strings through an OpenAI-compatible API (DeepSeek, Moonshot, SiliconFlow, Ollama...) and registers the result as a built-in resource pack. Everything is cached in config/auto-translation/.'''
+
+[[dependencies.auto_translation]]
+modId="neoforge"
+type="required"
+versionRange="[26.3.0.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.auto_translation]]
+modId="minecraft"
+type="required"
+versionRange="[26.3,26.4)"
+ordering="NONE"
+side="CLIENT"
