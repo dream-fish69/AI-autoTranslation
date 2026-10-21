@@ -180,7 +180,7 @@ auto-translation/
 ├── tools/CfpaProbe.java          # 只测 CFPA 解析/下载/覆盖统计
 ├── tools/OfflineProbe.java       # 只测离线词典：词条数、样例、真实字符串覆盖率
 ├── src/main/resources/META-INF/neoforge.mods.toml
-├── src/main/resources/icon.png             # 128×128 模组图标（A → 文）
+├── src/main/resources/icon.png             # 512×512 模组图标（A → 文）
 ├── src/main/resources/assets/auto_translation/lang/offline-glossary.json   # 内置术语表
 └── src/main/java/com/dsh/autotranslation/
     ├── AutoTranslationMod.java          # 入口：注册资源包/配置界面、一次性调度、3 次重试、重载
